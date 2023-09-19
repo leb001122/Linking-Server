@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>linking email</title>
+    </head>
+    <body>
+        <div>
+            <div style="min-width: 500px; max-width: 640px; padding: 48px 40px; margin:0 auto;">
+                <div style="margin-bottom: 3em">
+                    <img style="width: 100px; height: 100px;" src="cid:logo">
+                </div>
+                <div>
+                    <p style="color: black; margin: 15px 0px; font-size: 1.2em; white-space: nowrap;">안녕하세요
+                        <span style="font-weight: bold" th:text="${receiver}"></span>님!
+                    </p>
+                    <p style="color: black; margin: 15px 0px; font-size: 1.2em; white-space: nowrap;">
+                        <span style="font-weight: bold" th:text="${sender}"></span>님이 메일을 발송하였습니다.
+                    </p>
+                </div>
+                <div style="color: black">
+                    <p style="margin:8px 0px; font-size: 1.2em;">
+                        <span style="font-weight: bold;" th:text="${projectName}"></span>
+                    </p>
+                </div>
+                <div style="color: black">
+                    <p style="margin:8px 0px; font-size: 1.2em;">
+                        <span th:text="${type}"></span>
+                         [
+                        <span style="font-weight: bold;" th:text="${title}"></span>
+                        ]
+                        <span th:text="${temp}"></span>
+                    </p>
+                </div>
+
+<!--                <div style="margin-top: 30px">-->
+<!--                    <span style="margin-right: 10px">-->
+<!--                        <a th:href="${webLink}">-->
+<!--                            <button style="padding: 5px 7px; background-color: black; color: white; border-radius: 5px; width: 105px; height:35px">Open in Web</button>-->
+<!--                        </a>-->
+<!--                    </span>-->
+<!--                    <span>-->
+<!--                        <button style="padding: 5px 7px; background-color: black; color: white; border-radius: 5px; width: 105px; height:35px">Open in App-->
+<!--                        </button>-->
+<!--                    </span>-->
+<!--                </div>-->
+            </div>
+        </div>
+
+    </body>
+</html>
